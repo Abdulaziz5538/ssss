@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styl.css">
+</head>
+<body>
+    <div class="asosiy">
+        <div data-tilt data-tilt-reverse="true" class="cart">
+            <img src="./alpine-a310-vision-3840x2160-27704.jpg" alt="">
+            <h1>Alpino</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit enim accusamus eos dolore voluptatem.
+            </p>
+            <button>Order</button>
+        </div>
+        <div data-tilt data-tilt-scale="1.1" class="cart">
+            <img src="./brabus-p-900-rocket-3840x2160-27722.jpg" alt="">
+            <h1>Brabus</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit enim accusamus eos dolore voluptatem.
+            </p>
+            <button>Order</button>
+        </div>
+        <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="cart">
+            <img src="./cadillac-escalade-v-3840x2160-27673.jpg" alt="">
+            <h1>Cadillac</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit enim accusamus eos dolore voluptatem.
+            </p>
+            <button>Order</button>
+        </div>
+        <div data-tilt data-tilt-reverse="true" class="cart">
+            <img src="./pagani-utopia-3840x2160-27766.jpg" alt="">
+            <h1>Pagani</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit enim accusamus eos dolore voluptatem.
+            </p>
+            <button>Order</button>
+        </div>
+        <div data-tilt data-tilt-reset="false" class="cart">
+            <img src="./aston-martin-3840x2160-27712.jpg" alt="">
+            <h1>Aston</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit enim accusamus eos dolore voluptatem.
+            </p>
+            <button>Order</button>
+        </div>
+    </div>
+
+
+
+
+
+<div class="cart"></div>
+    
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".cart"), {
+		max: 25,
+		speed: 400
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".cart"));
+</script>
+</body>
+</html>
